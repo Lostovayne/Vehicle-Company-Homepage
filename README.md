@@ -1,6 +1,6 @@
 ## Descripción
 
-Este proyecto es una Landing Page de una compania que ofrece servicios de personalización de vehículos, específicamente Mustang. Proporciona información detallada sobre los diferentes motores disponibles y sus especificaciones, permitiendo a los clientes personalizar su vehículo a su gusto. Además, muestra las especificaciones de cada motor y ofrece una experiencia de navegación intuitiva y eficiente para facilitar experiencia del usuario.
+Este proyecto es una Landing Page para una compañía especializada en la personalización de vehículos, específicamente Mustang. Proporciona información detallada sobre los diferentes motores disponibles y sus especificaciones, permitiendo a los clientes personalizar su vehículo según sus preferencias. Ofrece una experiencia de navegación intuitiva y eficiente para mejorar la experiencia del usuario.
 
 ## Demo
 
