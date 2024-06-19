@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import MotorSpecs from "./MotorSpecs.astro";
+---
+
+<section class="w-full">
+  <h2
+    class="uppercase bg-[#303231] text-center text-white text-4xl font-normal p-5 mb-10"
+  >
+    power does matter
+  </h2>
+  <!--container  -->
+  <div class="mx-auto max-w-screen-2xl flex flex-col gap-y-24">
+    <p class="text-center px-5">
+      At the heart of every Mustang is a high-powered engine. Mustang offers
+      four available engines, including the 5.2L supercharged V8.
+    </p>
+
+    <MotorSpecs
+      motorName="ExhoBoost®"
+      description="It’s a first Ecoboost® engine powered by Ford Performance and it’s not afraid to prove it. The 2.3L high-performance engine differentiates itself with a slightly larger twin-scroll turbo compressor."
+      image="motor1.svg"
+      specs={[
+        "310 horsepower",
+        "350 lb.-ft. of torque*",
+        "Turbocharging and direct injection",
+        "Twin independent variable camshaft timing (Ti-VCT)",
+      ]}
+    />
+
+    <MotorSpecs
+      motorName="GT"
+      optionalDescription="5.0L Ti-VCT V8"
+      description="An engine that comes standard with a hit of adrenaline."
+      image="motor2.svg"
+      specs={[
+        "460 horsepower",
+        "420 lb.-ft. of tire-squealing torque**",
+        "Port fuel direct injection",
+      ]}
+      isReverse={true}
+    />
+
+    <MotorSpecs
+      motorName="Mach 1"
+      optionalDescription="5.0L Tri-VCT V8"
+      description="The pinnacle of 5-liter performance, this engine is uniquely tuned andcalibrated for speed, And with the Mach 1 Handling Package."
+      image="motor3.svg"
+      specs={[
+        "480 horsepower at 7,000 rpm",
+        "420 lb.-ft. of torque* at 4,600rpm",
+        "Two side heat exchanges for track endurance",
+        "6-speed manual transmission with rev-matching",
+      ]}
+    />
+
+    <MotorSpecs
+      motorName="Shelby® GT500®"
+      optionalDescription="5.2L supercharged cross=plane crank V8."
+      description="Top-of-the-line power that you can feel."
+      image="motor4.svg"
+      specs={["760 horsepower", "625 lb.-ft. of torque*"]}
+      isReverse={true}
+    />
+  </div>
+</section>
