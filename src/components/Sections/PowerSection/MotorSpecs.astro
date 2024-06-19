@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  motorName: string;
+  description: string;
+  optionalDescription?: string;
+  image: string;
+  specs: string[];
+  isReverse?: boolean;
+}
+
+const { motorName, description, optionalDescription, image, specs, isReverse } =
+  Astro.props;
+---
+
+<div
+  class={`flex flex-col ${isReverse ? "md:flex-row-reverse" : ""} md:flex-row`}
+>
+  <!--left side (text)-->
+  <div
+    class={`w-full md:w-1/2 flex flex-col justify-center p-5 md:pl-10 lg:pl-20`}
+  >
+    <h3 class="text-4xl font-medium mb-8">{motorName}</h3>
+    <p>{optionalDescription}</p>
+    <p class="text-lg max-w-lg text-pretty mb-8">
+      {description}
+    </p>
+    <!-- specs container -->
+    <div class="w-full flex flex-col gap-y-4">
+      {
+        specs.map((spec) => (
+          <div class="flex items-center gap-x-3">
+            <img
+              class="w-6 h-6"
+              src="/src/components/Sections/PowerSection/CheckIcon.svg"
+              alt="icono check verde"
+            />
+            <span>{spec}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <!--right side (motor)-->
+  <div class="w-full flex items-center md:w-1/2">
+    <Image
+      height={500}
+      width={600}
+      class="w-full max-h-[550px] p-5"
+      src={`/public/${image}`}
+      alt="motor de automovil"
+    />
+  </div>
+</div>
