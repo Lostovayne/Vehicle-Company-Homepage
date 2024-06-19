@@ -1,47 +1,47 @@
-# Astro Starter Kit: Minimal
+## Descripción
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Este proyecto es una Landing Page de una compania que ofrece servicios de personalización de vehículos, específicamente Mustang. Proporciona información detallada sobre los diferentes motores disponibles y sus especificaciones, permitiendo a los clientes personalizar su vehículo a su gusto. Además, muestra las especificaciones de cada motor y ofrece una experiencia de navegación intuitiva y eficiente para facilitar experiencia del usuario.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Demo
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Rendimiento
 
-## 🚀 Project Structure
+## Instalación
 
-Inside of your Astro project, you'll see the following folders and files:
+1. Clona este repositorio en tu máquina local.
+2. Asegúrate de tener Node.js instalado.
+3. Ejecuta `pnpm install` para instalar las dependencias.
+4. Ejecuta `pnpm start` para iniciar el servidor de desarrollo.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Uso
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Una vez que el servidor esté en funcionamiento, puedes acceder a la Landing Page a través de tu navegador web visitando `http://localhost:4321`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Características
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Tecnologías Utilizadas
 
-## 🧞 Commands
+- Astro
+- Tailwind
+- Typescript
+- pnpm
 
-All commands are run from the root of the project, from a terminal:
+## Contribución
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
-## 👀 Want to learn more?
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
+3. Realiza tus cambios y haz commit de ellos (`git commit -am 'Agrega nueva característica'`).
+4. Haz push de tu rama (`git push origin feature/nueva-caracteristica`).
+5. Crea un nuevo Pull Request.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+¡Gracias por tu interés en este proyecto! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros.
+
+## 👏 Gracias a todos por sus contribuciones
+
+<img align="left" src="https://contributors-img.web.app/image?repo=Casadjes/Vehicle-Company-Homepage"/>
