@@ -1,0 +1,61 @@
+---
+import StepCard from "./StepCard.astro";
+import Card from "./Card.astro";
+---
+
+<section class="w-full pb-20 bg-slate-50">
+  <h2
+    class="bg-[#303231] text-center text-white text-4xl font-normal p-5 mb-10"
+  >
+    Custom Order Your Mustang
+  </h2>
+  <!--container  -->
+  <div
+    class="mx-auto max-w-screen-2xl flex items-center px-5 flex-col gap-y-16"
+  >
+    <h3 class="text-2xl text-center">
+      Get the vehicle you want with an online custom order.
+    </h3>
+    <!-- cards -->
+    <div
+      class="w-full flex flex-col flex-wrap items-center justify-center gap-5 md:flex-row"
+    >
+      <StepCard
+        number={1}
+        title="Build & Price Your Vehicle"
+        description="Choose model, trim & options to create your custom order."
+        bgColor="bg-purple-400"
+      />
+      <span class="hidden xl:block border h-40 w-px mx-5"></span>
+      <StepCard
+        number={2}
+        title="Share With Your Dealer"
+        description="When you’re finished building, submit your vehicle to your local dealer."
+        bgColor="bg-orange-400"
+      />
+      <span class="hidden xl:block border h-40 w-px mx-5"></span>
+      <StepCard
+        number={3}
+        title="Place Your Order"
+        description="Your dealer will contact you. Answer the questions before placing your order."
+        bgColor="bg-blue-400"
+      />
+    </div>
+    <!-- button -->
+    <div class="flex flex-col items-center">
+      <button
+        type="button"
+        class="text-white bg-[#003478] font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2"
+      >
+        Create Your Custom Order
+      </button>
+      <a class="text-[#0276B3] underline" href="#">Custom Order Explained</a>
+    </div>
+    <!-- cards -->
+    <div class="w-full flex flex-wrap gap-10 justify-around">
+      <Card title="Starting At" numbers="$27,205" />
+      <Card title="EPA-Est. MPG City/Hwy" numbers="21/30" />
+      <Card title="Seating For" numbers="4" />
+    </div>
+  </div>
+</section>
