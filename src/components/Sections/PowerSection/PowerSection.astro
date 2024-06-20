@@ -4,62 +4,67 @@ import MotorSpecs from "./MotorSpecs.astro";
 ---
 
 <section class="w-full">
-  <h2
-    class="uppercase bg-[#303231] text-center text-white text-4xl font-normal p-5 mb-10"
-  >
-    power does matter
+  <h2 class="bg-primary text-center text-white text-4xl font-normal p-5 mb-10">
+    Power Does Matter
   </h2>
   <!--container  -->
-  <div class="mx-auto max-w-screen-2xl flex flex-col gap-y-24">
-    <p class="text-center px-5">
+  <div class="mx-auto max-w-screen-2xl flex items-center flex-col gap-y-24">
+    <p class="px-5 text-2xl max-w-5xl text-center text-primary">
       At the heart of every Mustang is a high-powered engine. Mustang offers
       four available engines, including the 5.2L supercharged V8.
     </p>
 
     <MotorSpecs
-      motorName="ExhoBoost®"
-      description="It’s a first Ecoboost® engine powered by Ford Performance and it’s not afraid to prove it. The 2.3L high-performance engine differentiates itself with a slightly larger twin-scroll turbo compressor."
+      motorName="Exhoboost 5.0L"
+      optionalDescription="Ti-VCT V8"
+      description="A high-performance Exhoboost engine, producing 450 horsepower and 410 lb-ft of torque. It's equipped with direct injection and uses Ti-VCT for superior performance and efficiency."
       image="motor1.svg"
       specs={[
-        "310 horsepower",
-        "350 lb.-ft. of torque*",
-        "Turbocharging and direct injection",
+        "Turbocharging",
+        "Direct injection",
         "Twin independent variable camshaft timing (Ti-VCT)",
+        "High-output cylinder head",
       ]}
     />
 
     <MotorSpecs
-      motorName="GT"
-      optionalDescription="5.0L Ti-VCT V8"
-      description="An engine that comes standard with a hit of adrenaline."
+      motorName="GT 5.0L"
+      optionalDescription="Ti-VCT V8"
+      description="An engine with a hit of adrenaline, producing 450 horsepower and 410 lb-ft of torque. It's fueled by direct injection and features port fuel direct injection."
       image="motor2.svg"
       specs={[
-        "460 horsepower",
-        "420 lb.-ft. of tire-squealing torque**",
+        "High-flow exhaust system",
+        "Active valve performance exhaust",
         "Port fuel direct injection",
+        "Twin independent variable camshaft timing (Ti-VCT)",
       ]}
       isReverse={true}
     />
 
     <MotorSpecs
-      motorName="Mach 1"
-      optionalDescription="5.0L Tri-VCT V8"
-      description="The pinnacle of 5-liter performance, this engine is uniquely tuned andcalibrated for speed, And with the Mach 1 Handling Package."
+      motorName="Mach 1 5.0L"
+      optionalDescription="Ti-VCT V8"
+      description="The pinnacle of 5-liter performance, this engine is uniquely tuned and calibrated for speed. It features a 6-speed manual transmission with rev-matching and comes equipped with two side heat exchangers for track endurance."
       image="motor3.svg"
       specs={[
         "480 horsepower at 7,000 rpm",
-        "420 lb.-ft. of torque* at 4,600rpm",
-        "Two side heat exchanges for track endurance",
-        "6-speed manual transmission with rev-matching",
+        "420 lb-ft. of torque at 4,600 rpm",
+        "Active rear spoiler",
+        "Stabilizer bars",
       ]}
     />
 
     <MotorSpecs
-      motorName="Shelby® GT500®"
-      optionalDescription="5.2L supercharged cross=plane crank V8."
-      description="Top-of-the-line power that you can feel."
+      motorName="Shelby® GT500® 5.2L"
+      optionalDescription="Supercharged crossplane crank V8"
+      description="Top-of-the-line power that you can feel, producing 760 horsepower and 625 lb-ft of torque. It features a high-output cylinder head and is equipped with active valve performance exhaust."
       image="motor4.svg"
-      specs={["760 horsepower", "625 lb.-ft. of torque*"]}
+      specs={[
+        "High-flow exhaust system",
+        "Active valve performance exhaust",
+        "Stabilizer bars",
+        "High-output cylinder head",
+      ]}
       isReverse={true}
     />
   </div>
