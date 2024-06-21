@@ -17,13 +17,13 @@ const { motorName, description, optionalDescription, image, specs, isReverse } =
 <div
   class={`flex flex-col ${isReverse ? "md:flex-row-reverse" : ""} md:flex-row`}
 >
-  <!--left side (text)-->
+  <!--default left side (text)-->
   <div
-    class={`w-full md:w-1/2 flex flex-col justify-center p-5 md:pl-10 lg:pl-20`}
+    class={`w-full md:w-1/2 flex flex-col justify-center p-5 md:pl-10 ${isReverse ? "" : "lg:pl-24"}`}
   >
-    <h3 class="text-4xl font-medium mb-8">{motorName}</h3>
-    <p>{optionalDescription}</p>
-    <p class="text-lg max-w-lg text-pretty mb-8">
+    <h3 class="text-4xl font-normal mb-8 text-primary">{motorName}</h3>
+    <p class="text-sm font-bold mb-2">{optionalDescription}</p>
+    <p class="text-lg max-w-lg text-pretty mb-8 text-textSecondary">
       {description}
     </p>
     <!-- specs container -->
@@ -31,24 +31,20 @@ const { motorName, description, optionalDescription, image, specs, isReverse } =
       {
         specs.map((spec) => (
           <div class="flex items-center gap-x-3">
-            <img
-              class="w-6 h-6"
-              src="/src/components/Sections/PowerSection/CheckIcon.svg"
-              alt="icono check verde"
-            />
-            <span>{spec}</span>
+            <img class="w-6 h-6" src="/CheckIcon.svg" alt="icono check verde" />
+            <span class="text-textSecondary">{spec}</span>
           </div>
         ))
       }
     </div>
   </div>
 
-  <!--right side (motor)-->
+  <!--default right side (motor)-->
   <div class="w-full flex items-center md:w-1/2">
     <Image
       height={500}
       width={600}
-      class="w-full max-h-[550px] p-5"
+      class="w-full max-h-[550px] p-5 drop-shadow-2xl"
       src={`/${image}`}
       alt="motor de automovil"
     />

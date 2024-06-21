@@ -1,0 +1,36 @@
+---
+interface Props {
+  number: number;
+  title: string;
+  description: string;
+  bgColor: string;
+}
+const { number, title, description, bgColor } = Astro.props;
+---
+
+<div
+  class="flex flex-col gap-y-4 items-center text-center border rounded-sm drop-shadow-md h-[230px] max-w-72 py-3 px-4 bg-white"
+>
+  <span
+    class={`rounded-full h-8 w-8 grid place-content-center text-white ${bgColor}`}
+    >{number}</span
+  >
+  <h4 class="text-lg font-medium text-[#233443]">{title}</h4>
+  <p class="text-textSecondary">{description}</p>
+  <a href="#" class="flex items-center text-[#FF6645]
+]"
+    >Learn more <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      ><path
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="m10 17l5-5m0 0l-5-5"></path></svg
+    ></a
+  >
+</div>
