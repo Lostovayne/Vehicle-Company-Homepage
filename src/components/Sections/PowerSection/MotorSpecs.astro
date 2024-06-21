@@ -21,8 +21,8 @@ const { motorName, description, optionalDescription, image, specs, isReverse } =
   <div
     class={`w-full md:w-1/2 flex flex-col justify-center p-5 md:pl-10 ${isReverse ? "" : "lg:pl-24"}`}
   >
-    <h3 class="text-4xl font-medium mb-8 text-primary">{motorName}</h3>
-    <p>{optionalDescription}</p>
+    <h3 class="text-4xl font-normal mb-8 text-primary">{motorName}</h3>
+    <p class="text-sm font-bold mb-2">{optionalDescription}</p>
     <p class="text-lg max-w-lg text-pretty mb-8 text-textSecondary">
       {description}
     </p>

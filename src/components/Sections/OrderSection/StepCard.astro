@@ -9,14 +9,14 @@ const { number, title, description, bgColor } = Astro.props;
 ---
 
 <div
-  class="flex flex-col gap-y-4 items-center text-center border rounded-sm drop-shadow-sm h-[230px] max-w-72 p-3 bg-white"
+  class="flex flex-col gap-y-4 items-center text-center border rounded-sm drop-shadow-md h-[230px] max-w-72 p-3 bg-white"
 >
   <span
     class={`rounded-full h-8 w-8 grid place-content-center text-white ${bgColor}`}
     >{number}</span
   >
-  <h4 class="text-lg font-medium">{title}</h4>
-  <p>{description}</p>
+  <h4 class="text-lg font-medium text-[#233443]">{title}</h4>
+  <p class="text-textSecondary">{description}</p>
   <a href="#" class="flex items-center text-[#FF6645]
 ]"
     >Learn more <svg
