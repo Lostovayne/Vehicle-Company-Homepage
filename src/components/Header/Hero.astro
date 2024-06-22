@@ -1,40 +1,59 @@
 ---
 import Navbar from "./Navbar.astro";
+import NavbarMobile from "./Navbar-Mobile.astro";
 import { Image } from "astro:assets";
 ---
 
-<header class="">
+<header class="h-screen md:h-auto lg:h-screen">
+  <NavbarMobile />
   <Navbar />
 
-  <div class="flex items-center justify-between mt-5">
-    <div class="w-[55%] pt-[158px] h-screen">
+  <div
+    class="flex flex-col items-center justify-between mt-5 md:pt-10 lg:flex-row"
+  >
+    <div class="w-full">
       <h1
-        class="text-5xl mb-16 max-w-2xl 2xl:pl-40 uppercase md:text-6xl font-bold"
+        class="text-4xl md:text-5xl max-md:max-w-72 uppercase text-pretty text-[#003478] mb-10 pl-5 font-light"
       >
-        The Future of <span class="text-[#FBAA0C]"> Exhilaration</span>
+        The Future of <span class="text-[#FBAA0C] font-medium">
+          Exhilaration</span
+        >
       </h1>
       <!-- Todo:Letras -->
       <p
-        class="uppercase 2xl:pl-40 text-4xl py-[19px] font-light text-white bg-primary"
+        class="uppercase pl-6 text-2xl md:text-4xl font-light text-white bg-primary"
       >
         ford mustang <span>2021</span>
       </p>
-      <div class="w-full bg-primary py-10 mt-6"></div>
+      <div class="w-full bg-primary h-8 md:h-10 mt-3"></div>
 
-      <div class="xl:pl-40 mt-8 space-x-4">
+      <div class="pl-6 pt-10 flex gap-x-2">
         <button class="bg-[#003478] text-white py-3 px-8 rounded-sm">
           Build & Price
         </button>
-        <button> Watch Video </button>
+        <button
+          class="py-3 px-8 text-textSecondary hover:bg-slate-50 rounded-sm transition-colors"
+        >
+          Watch Video
+        </button>
       </div>
     </div>
 
-    <Image
-      width={1490}
-      height={700}
-      src="/vehicle2.svg"
-      alt="hero"
-      class="absolute right-0 bottom-0 w-[50%]"
-    />
+    <div class="w-full pl-3">
+      <Image
+        width={763}
+        height={766}
+        src="/vehicle2.svg"
+        alt="hero"
+        class="h-auto max-h-[500px] w-full lg:hidden"
+      />
+      <Image
+        width={1399}
+        height={739}
+        src="/vehicle.svg"
+        alt="hero"
+        class="hidden lg:block"
+      />
+    </div>
   </div>
 </header>

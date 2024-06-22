@@ -3,7 +3,9 @@ import { Image } from "astro:assets";
 import { NavItems } from "../../constants/navbar";
 ---
 
-<nav class="flex justify-between mx-auto max-w-screen-2xl px-6 md:px-12 2xl:px-0 pt-6">
+<nav
+  class="hidden lg:flex justify-between mx-auto max-w-screen-2xl px-6 md:px-12 2xl:px-0 pt-6"
+>
   <a href="https://withastro.com/" class="">
     <Image
       src="/logo.svg"
