@@ -4,12 +4,12 @@ import NavbarMobile from "../Navbar-Mobile.astro";
 import { Image } from "astro:assets";
 ---
 
-<header class="h-screen sm:h-[60vh] lg:h-[90vh] w-full">
+<header class="h-screen sm:h-[70vh] lg:h-[90vh] w-full">
   <NavbarMobile />
   <Navbar />
 
   <div
-    class="mx-auto max-w-screen-2xl flex flex-col items-center justify-between mt-5 xl:mt-10 pt-5 sm:pt-0 lg:pt-20 sm:flex-row"
+    class="mx-auto max-w-screen-2xl flex flex-col items-center justify-between mt-5 xl:mt-10 pt-5 lg:pt-20 sm:flex-row"
   >
     <!--contenedor izquierdo -->
     <div class="w-full flex flex-col items-center sm:items-start">
@@ -29,8 +29,12 @@ import { Image } from "astro:assets";
       </p>
       <div class="w-full bg-primary h-8 md:h-10 mt-3 sm:hidden"></div>
       <!--botones -->
-      <div class="sm:pl-6 lg:pl-12 pt-10 flex gap-x-10">
-        <button class="bg-[#003478] text-white py-3 px-8 rounded-sm">
+      <div
+        class="sm:pl-6 lg:pl-12 pt-10 flex flex-wrap justify-center gap-4 md:gap-x-10"
+      >
+        <button
+          class="bg-[#003478] text-white py-3 sm:py-2 md:py-3 px-8 sm:px-5 md:px-8 rounded-sm text-base"
+        >
           Build & Price
         </button>
         <div class="flex items-center gap-x-3">
@@ -43,7 +47,10 @@ import { Image } from "astro:assets";
               alt="icono de play"
             />
           </button>
-          <span class="text-base text-textSecondary">Watch video</span>
+          <span
+            class="text-base text-[#003478] md:text-textSecondary py-3 sm:py-2 md:py-0 px-8 sm:px-5 md:px-0 max-md:border max-md:border-[#003478] max-md:rounded-sm"
+            >Watch video</span
+          >
         </div>
       </div>
     </div>
