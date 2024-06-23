@@ -4,12 +4,12 @@ import NavbarMobile from "../Navbar-Mobile.astro";
 import { Image } from "astro:assets";
 ---
 
-<header class="h-screen sm:h-[70vh] lg:h-[90vh] w-full">
+<header class="flex flex-col h-screen sm:h-[70vh] lg:h-[90vh] w-full">
   <NavbarMobile />
   <Navbar />
 
   <div
-    class="mx-auto max-w-screen-2xl flex flex-col items-center justify-between mt-5 xl:mt-10 pt-5 lg:pt-20 sm:flex-row"
+    class="mx-auto w-full max-w-screen-2xl flex flex-col items-center justify-between mt-5 xl:mt-10 pt-5 lg:pt-20 sm:flex-row"
   >
     <!--contenedor izquierdo -->
     <div class="w-full flex flex-col items-center sm:items-start">
@@ -73,13 +73,16 @@ import { Image } from "astro:assets";
 
       <!--lineas desktop-->
       <div
-        class="hidden lg:pt-1 xl:pt-0 sm:flex flex-col uppercase w-[200%] -z-10 bg-primary h-[61px] min-[660px]:h-16 min-[685px]:h-[67px] lg:h-[100px] min-[1044px]:h-[103px] min-[1280px]:h-[67px] absolute -left-[100%] top-[42%] wrapper"
+        class="hidden lg:pt-1 xl:pt-0 sm:flex flex-col uppercase w-[200%] -z-10 bg-primary h-[61px] min-[660px]:h-16 min-[685px]:h-[67px] lg:h-[100px] min-[1044px]:h-[103px] min-[1280px]:h-[67px] min-[1340px]:h-[70px] min-[1390px]:h-[74px] min-[1448px]:h-[78px] min-[1530px]:h-[82px] absolute -left-[100%] top-[42%] wrapper"
       >
         <span
           class="text-white uppercase pl-6 sm:pl-7 lg:pl-14 text-xl lg:text-3xl xl:text-2xl font-light"
           >ford mustang <span class="text-base">2021</span></span
         >
-        <div class="w-full h-2 lg:h-3 xl:h-2 bg-white absolute top-[43%]"></div>
+        <div
+          class="w-full h-2 lg:h-3 xl:h-2 min-[1445px]:h-[9px] bg-white absolute top-[43%]"
+        >
+        </div>
       </div>
     </div>
   </div>
