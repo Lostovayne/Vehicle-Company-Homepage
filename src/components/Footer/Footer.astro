@@ -1,0 +1,84 @@
+---
+import Image from "astro/components/Image.astro";
+import { FooterLinks } from "../../constants/footer";
+---
+
+<footer
+  class="mx-auto max-w-screen-2xl flex flex-col py-20 mt-20 text-white bg-[#151515]"
+>
+  <!-- top section -->
+  <section class="flex flex-col sm:flex-row mb-20">
+    <!-- left side -->
+    <div class="w-full sm:w-1/2 p-5 flex flex-col gap-y-10">
+      <!-- title -->
+      <h2 class="text-4xl font-normal text-pretty">
+        Quality means doing it right when no one is looking
+        <cite class="text-sm text-[#848484]">– Henry Ford</cite>
+      </h2>
+      <p class="text-lg text-pretty">
+        Our dealership takes your privacy seriously and is committed to
+        safeguarding your privacy online. Because we do gather certain types of
+        information from you.
+      </p>
+      <!-- button -->
+      <div>
+        <button
+          type="button"
+          class="text-white bg-[#003478] rounded-sm text-lg px-5 py-2.5 text-center inline-flex items-center"
+        >
+          Contact For Queries
+        </button>
+      </div>
+    </div>
+    <!-- right side -->
+    <div class="w-full sm:w-1/2 flex items-center justify-end">
+      <Image
+        class="w-full max-w-[460px] max-h-[450px] object-cover object-top"
+        src="/footerCar.svg"
+        alt="Car"
+        width={500}
+        height={500}
+      />
+    </div>
+  </section>
+  <!-- bottom section -->
+  <section class="px-5 pt-10">
+    <!-- links -->
+    <ul
+      class="flex flex-col items-center md:flex-row md:justify-center md:items-center gap-6 text-current"
+    >
+      <!-- logo -->
+      <li>
+        <a href="#"
+          ><Image
+            class={"w-52 md:w-20 md:mr-5"}
+            src="/logo.svg"
+            width={100}
+            height={50}
+            alt="Ford logo"
+          /></a
+        >
+      </li>
+      {
+        FooterLinks.map((item) => (
+          <li class="">
+            <a href={item.path} class="text-base font-normal ">
+              {item.name}
+            </a>
+          </li>
+        ))
+      }
+      <!-- social icons -->
+      <li class="flex [&>a>img]:w-5 [&>a>img]:h-5 gap-x-3 md:ml-5">
+        <a href="#"><img src="/src/icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="/src/icons/instagram.svg" alt="facebook" /></a>
+        <a href="#"><img src="/src/icons/youtube.svg" alt="facebook" /></a>
+      </li>
+    </ul>
+    <!-- divider -->
+    <div class="h-px w-full bg-[#2C2C2C] my-10"></div>
+    <span class="text-sm text-[#4F4F4F] block text-center"
+      >Copyright &copy; 2024. All rights reserved.</span
+    >
+  </section>
+</footer>
