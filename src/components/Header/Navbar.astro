@@ -3,7 +3,9 @@ import { Image } from "astro:assets";
 import { NavItems } from "../../constants/navbar";
 ---
 
-<nav class="flex justify-between mx-auto max-w-screen-2xl px-6 md:px-12 2xl:px-0 pt-6">
+<nav
+  class="hidden w-full lg:flex justify-between mx-auto max-w-screen-2xl px-6 md:px-12 pt-6"
+>
   <a href="https://withastro.com/" class="">
     <Image
       src="/logo.svg"
@@ -20,7 +22,7 @@ import { NavItems } from "../../constants/navbar";
         <li class="">
           <a
             href={item.path}
-            class="text-sm md:text-base font-semibold uppercase text-gray-400 hover:text-gray-800 hover:opacity-100  transition-colors "
+            class="text-sm md:text-base font-normal uppercase text-gray-700 hover:text-gray-800 hover:opacity-100  transition-colors "
           >
             {item.name}
           </a>

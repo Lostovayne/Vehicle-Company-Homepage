@@ -1,0 +1,47 @@
+---
+import Image from "astro/components/Image.astro";
+import Button from "../../Reutilizables/Button.astro";
+---
+
+<footer class="w-full md:h-[50vh]">
+  <section class="mx-auto max-w-screen-2xl flex flex-col">
+    <section class="flex flex-col md:flex-row py-10 my-20">
+      <!-- left side -->
+      <div class="w-full md:w-1/2 p-5 flex flex-col gap-y-10">
+        <!-- title -->
+        <h2 class="text-4xl font-normal text-primary">
+          FordPass. Built to keep you Moving.
+        </h2>
+        <p class="text-lg text-pretty text-textSecondary max-w-xl">
+          FordPass Connect (optional on select vehicles) helps you on long road
+          trips or quick commutes. It connects you to the FordPass App and
+          complimentary Connected Service. Check the FordPass Terms for details
+          on remote features. Connected service and features depend on your
+          network availability. Technology and vehicle capability may limit
+          functionality.
+        </p>
+        <!-- button -->
+        <div>
+          <Button text="Learn More" />
+        </div>
+      </div>
+      <!-- right side -->
+      <div class="w-full md:w-1/2 flex items-center justify-end">
+        <Image
+          class="w-full max-w-[460px] max-h-[450px] object-cover object-top xl:hidden"
+          src="/autoNaranja.svg"
+          alt="Mustang Car"
+          width={500}
+          height={500}
+        />
+        <Image
+          class="hidden w-full xl:block"
+          src="/autoNaranja2.svg"
+          alt="Car"
+          width={1366}
+          height={584}
+        />
+      </div>
+    </section>
+  </section>
+</footer>

@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+---
+
+<nav class="flex justify-between items-center px-5 py-6 lg:hidden">
+  <a href="https://withastro.com/" class="">
+    <Image
+      src="/logo.svg"
+      alt="Ford logo"
+      width={100}
+      height={50}
+      class={"cursor-pointer aspect-[116/44] w-[65%] sm:w-[80%]"}
+    />
+  </a>
+
+  <svg
+    class="cursor-pointer h-7 w-7 text-primary"
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 512 512"
+    ><path
+      fill="currentColor"
+      d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z"></path></svg
+  >
+</nav>
