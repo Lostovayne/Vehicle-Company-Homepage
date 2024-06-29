@@ -1,6 +1,7 @@
 ---
 import StepCard from "./StepCard.astro";
 import Card from "./Card.astro";
+import Button from "../../Reutilizables/Button.astro";
 ---
 
 <section class="w-full pb-20 bg-slate-50">
@@ -43,26 +44,7 @@ import Card from "./Card.astro";
     </div>
     <!-- button -->
     <div class="flex flex-col items-center gap-y-2">
-      <button
-        type="button"
-        class="text-white bg-[#003478] rounded-sm text-lg px-5 py-2.5 text-center inline-flex items-center"
-      >
-        Create Your Custom Order
-        <svg
-          class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 10"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-        </svg>
-      </button>
+      <Button text="Create Your Custom Order" />
       <a class="text-[#0276B3] text-base underline" href="#"
         >Custom Order Explained</a
       >
