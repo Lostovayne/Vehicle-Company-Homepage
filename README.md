@@ -3,6 +3,7 @@
 Este proyecto es una Landing Page para una compañía especializada en la personalización de vehículos, específicamente Mustang. Proporciona información detallada sobre los diferentes motores disponibles y sus especificaciones, permitiendo a los clientes personalizar su vehículo según sus preferencias. Ofrece una experiencia de navegación intuitiva y eficiente para mejorar la experiencia del usuario.
 
 ## Demo
+![screely-1719711188305](https://github.com/Casadjes/Vehicle-Company-Homepage/assets/115717042/38fccdb3-d8d3-4f2c-bac1-b2374d0b7b63)
 
 ## Rendimiento
 
